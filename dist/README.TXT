@@ -1,32 +1,25 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+==================================
+= GESTOR DE CUENTAS JAVA Y MYSQL =
+==================================
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+Este es un programa para la gestion de cuentas en todo tipo de plataformas.
+Tienes 3 secciones en las que que puedes subir, eliminar y actualizar la informacón de plataformas.
+Cuenta con un filtro de busqueda para simplificar la lectura de información.
 
-To run the project from the command line, go to the dist folder and
-type the following:
+Esta es la esctructura en la que se mostraran todos los datos
+Para su corecto funcionamiento recuerda cambiar la conexión a tu base de datos MySQL
+para hacerlo, dirijete a la siguiente ruta:
+------------------------
+Logico / Conexion.java
+------------------------
+Llena los datos de "//base de datos global" con la informacioón de tu base de datos.
+Los scripts necesarios los encontraras en:
+---------------------
+Logico / script.sql
+---------------------
 
-java -jar "ControlDB.jar" 
-
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
-
-Notes:
-
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+Para correr este programa en NetBeans sigue los siguientes pasos:
+1. Abrir tu IDE NetBeans.
+2. Abrir proyecto.
+2.1 selecciona los archivos de este repositorio.
+3. Modifica los archivos de login y administrador, ubicados en el paquete interfaz.
